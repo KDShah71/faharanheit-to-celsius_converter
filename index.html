@@ -6,18 +6,27 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
     <form action="">
         <div class="form-group">
             <label for="Celsius"></label>
-            <input type="" class="form-control" placeholder="Celsius">
+            <input type="text" id="fahren" /><br>
+            <input type="button" onClick="toFahren()" class="form-control" value="Convert to Fahrenheit">
+
         </div>
         <div class="form-group">
             <label for="Fahrenheit"></label>
-            <input type="" class="form-control" placeholder="Fahrenheit">
+            <input type="text" id="cels" /><br>
+            <input type="button" onClick="toCelc()" class="form-control" value="Convert to Celsius">
         </div>
+        
     </form>
+        <h1>
+            <span id="result"></span>
+        </h1>
+
+        <script src="script.js"></script>
 </body>
 </html>
